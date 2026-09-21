@@ -1,0 +1,44 @@
+# Un README ne peut afficher que des images déjà fabriquées : il n'exécute pas de code.
+# Le calendrier de contributions, lui, n'existe que derrière l'API GitHub. Ce workflow est
+# donc la pièce qui fait le pont — il interroge l'API une fois par jour, génère le SVG, et
+# le dépose sur la branche `output`, où le README va le chercher.
+name: Vaisseau des contributions
+
+on:
+  schedule:
+    # Toutes les nuits à 3 h UTC. Le calendrier ne bouge qu'au rythme des commits.
+    - cron: "0 3 * * *"
+  # Pour le relancer à la main depuis l'onglet Actions.
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  generer:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      # Pas de `npm install` : le script n'a aucune dépendance, il tient sur le fetch
+      # global de Node et une chaîne de caractères.
+      - name: Génère le SVG
+        run: node .github/scripts/vaisseau.mjs
+        env:
+          GITHUB_LOGIN: ${{ github.repository_owner }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Publie sur la branche output
+        uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -2,7 +2,7 @@
 
 <img src="https://readme-typing-svg.demolab.com?font=Golos+Text&weight=900&size=42&pause=3000&color=F7F2E8&center=true&vCenter=true&width=800&height=70&lines=JE+FAIS+DES+SITES+QUI+TIENNENT." alt="Je fais des sites qui tiennent." />
 
-`PIERRE MOUILLESEAUX LHUILLIER` · `BELFORT, FRANCE` · `BUT MMI`
+`PIERRE MOUILLESEAUX LHUILLIER` · `MONTBÉLIARD, FRANCE` · `BUT MMI`
 
 <a href="https://portfolio.pierre-mouilleseaux-lhuillier.fr">
   <img src="https://img.shields.io/badge/PORTFOLIO-9E1012?style=for-the-badge&labelColor=070605&logoColor=F7F2E8" alt="Portfolio" />
@@ -22,7 +22,7 @@
 
 Je m'appelle Pierre. Je prends un projet de bout en bout, et je le tiens dans le temps.
 
-Étudiant en deuxième année de BUT MMI à Belfort, je conçois et je développe des projets complets, en cours comme en dehors. Comprendre le besoin, dessiner l'interface, écrire le code, mettre en ligne et suivre.
+Étudiant en deuxième année de BUT MMI à Montbéliard, je conçois et je développe des projets complets, en cours comme en dehors. Comprendre le besoin, dessiner l'interface, écrire le code, mettre en ligne et suivre.
 
 Mon portfolio en est l'exemple : Astro et Tailwind pour les pages, PocketBase pour les données, three.js pour la 3D, un serveur Node derrière Apache — écrit, mesuré, et optimisé jusqu'à la taille des textures.
 
@@ -98,16 +98,11 @@ Mon portfolio en est l'exemple : Astro et Tailwind pour les pages, PocketBase po
 
 <div align="center">
 
-<img height="170" src="https://github-readme-stats.vercel.app/api?username=Pierre-ML&show_icons=true&include_all_commits=true&hide_border=true&bg_color=070605&title_color=9E1012&icon_color=9E1012&text_color=C5BDAD&ring_color=9E1012" alt="Statistiques GitHub" />
-<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Pierre-ML&layout=compact&langs_count=8&hide_border=true&bg_color=070605&title_color=9E1012&text_color=C5BDAD" alt="Langages les plus utilisés" />
-
-<br />
-
-<img src="https://streak-stats.demolab.com?user=Pierre-ML&hide_border=true&background=070605&stroke=26211C&border=26211C&ring=9E1012&fire=9E1012&currStreakLabel=9E1012&sideLabels=C5BDAD&currStreakNum=F7F2E8&sideNums=F7F2E8&dates=8C8271" alt="Série de contributions" />
+<img src="https://raw.githubusercontent.com/Pierre-ML/Pierre-ML/output/vaisseau.svg" alt="Un vaisseau balaie mon calendrier de contributions et tire sur les jours travaillés" />
 
 <br /><br />
 
-<img src="https://raw.githubusercontent.com/Pierre-ML/Pierre-ML/output/snake.svg" alt="Le serpent parcourt mes contributions" />
+<img src="https://streak-stats.demolab.com?user=Pierre-ML&hide_border=true&background=070605&stroke=26211C&border=26211C&ring=9E1012&fire=9E1012&currStreakLabel=9E1012&sideLabels=C5BDAD&currStreakNum=F7F2E8&sideNums=F7F2E8&dates=8C8271" alt="Série de contributions" />
 
 </div>
 
