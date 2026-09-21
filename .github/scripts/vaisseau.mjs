@@ -34,7 +34,7 @@ const CRIMSON = "#9E1012";
 const CRIMSON_SOMBRE = "#7A0C0D";
 
 /** Échelle des cases, du jour vide au jour le plus fourni. */
-const NIVEAUX = ["#1C1815", "#4A4438", CREAM_DARK, CREAM_MUTED, CREAM];
+const NIVEAUX = ["#1C1815", "#6B6250", CREAM_DARK, CREAM_MUTED, CREAM];
 
 // ------------------------------------------------ géométrie
 
@@ -103,13 +103,20 @@ async function calendrier(login) {
 }
 
 /**
- * Le niveau d'une case (1 à 4) à partir de son nombre de commits. Les seuils sont calés
- * sur le maximum de l'année : sur un compte peu fourni, un seul commit doit déjà se voir,
- * sinon toute la grille reste au niveau 1 et le vaisseau tire dans le noir.
+ * Le niveau d'une case (1 à 4) à partir de son nombre de commits.
+ *
+ * Seuils FIXES, jamais calés sur le maximum de l'année : avec une échelle relative, une
+ * seule grosse journée écrase tout le reste au niveau 1, à peine plus clair que le fond.
+ * Le vaisseau visait déjà chaque jour travaillé, mais ceux-là restaient presque invisibles
+ * — on aurait juré qu'il ne touchait que les jours « les plus actifs ». Ici, un commit
+ * isolé se voit toujours, quoi qu'il se soit passé ailleurs dans l'année.
  */
-function echelle(max) {
-	const pas = Math.max(1, Math.ceil(max / 4));
-	return (n) => (n <= 0 ? 0 : Math.min(4, Math.ceil(n / pas)));
+function niveau(n) {
+	if (n <= 0) return 0;
+	if (n === 1) return 1;
+	if (n <= 3) return 2;
+	if (n <= 6) return 3;
+	return 4;
 }
 
 // ------------------------------------------------ rendu
@@ -117,9 +124,6 @@ function echelle(max) {
 function construire(cal) {
 	const semaines = cal.weeks;
 	const colonnes = semaines.length;
-
-	const max = Math.max(0, ...semaines.flatMap((s) => s.contributionDays.map((j) => j.contributionCount)));
-	const niveau = echelle(max);
 
 	const largeur = GRILLE_X + colonnes * PAS - ECART + MARGE;
 	const hauteur = GRILLE_Y + GRILLE_H + COULOIR + PIED;

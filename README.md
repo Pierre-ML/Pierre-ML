@@ -18,6 +18,20 @@
 
 ---
 
+## ACTIVITÉ
+
+<div align="center">
+
+<img src="https://raw.githubusercontent.com/Pierre-ML/Pierre-ML/output/vaisseau.svg" alt="Un vaisseau balaie mon calendrier de contributions et tire sur les jours travaillés" />
+
+<br /><br />
+
+<img src="https://streak-stats.demolab.com?user=Pierre-ML&hide_border=true&background=070605&stroke=26211C&border=26211C&ring=9E1012&fire=9E1012&currStreakLabel=9E1012&sideLabels=C5BDAD&currStreakNum=F7F2E8&sideNums=F7F2E8&dates=8C8271" alt="Série de contributions" />
+
+</div>
+
+---
+
 ## QUI JE SUIS
 
 Je m'appelle Pierre. Je prends un projet de bout en bout, et je le tiens dans le temps.
@@ -91,20 +105,6 @@ Mon portfolio en est l'exemple : Astro et Tailwind pour les pages, PocketBase po
 | `02` **Ensuite** | Des projets pour de vrais clients | Des contraintes réelles : une échéance, un budget, quelqu'un qui s'en sert tous les jours. |
 | `03` **Puis** | Piloter un projet de bout en bout | Faire le lien entre ce qu'un client demande, ce dont ses visiteurs ont besoin, et ce que la technique permet. |
 | `04` **Plus tard** | Mon propre studio | Stratégie, design, développement et mise en ligne sous un même toit. |
-
----
-
-## ACTIVITÉ
-
-<div align="center">
-
-<img src="https://raw.githubusercontent.com/Pierre-ML/Pierre-ML/output/vaisseau.svg" alt="Un vaisseau balaie mon calendrier de contributions et tire sur les jours travaillés" />
-
-<br /><br />
-
-<img src="https://streak-stats.demolab.com?user=Pierre-ML&hide_border=true&background=070605&stroke=26211C&border=26211C&ring=9E1012&fire=9E1012&currStreakLabel=9E1012&sideLabels=C5BDAD&currStreakNum=F7F2E8&sideNums=F7F2E8&dates=8C8271" alt="Série de contributions" />
-
-</div>
 
 ---
 
